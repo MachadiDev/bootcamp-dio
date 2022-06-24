@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+    <head>
+        <meta charset="utf-8">
+        <title>Fundamentos alignself</title>
+        <style>
+            .container{
+                display: flex;
+                margin-bottom: 10px;
+                border: 1px solid black;
+                max-width: 350px;
+               /* align-items: center;*/
+            }
+
+            .items{
+                background-color: brown;
+                color: white;
+                font-size: 24px;
+                text-align: center;
+                margin: 5px;
+            }
+            .center{
+                align-self: center;
+            }
+            .start{
+                align-self: flex-start;
+            }
+            .end{
+                align-self: flex-end;
+            }
+            .baseline{
+                align-self: baseline;
+
+            }
+            .stretch{
+                align-self: stretch;
+            }
+            .align-container{
+                align-items: center;
+            }
+            .column{
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>auto</h2>
+        <section class="container align-container">
+            <div class="items">AAA</div>
+            <div class="items">123</div>
+            <div class="items">LOREM IPSUM GENERATED TEXT</div>
+            <div class="items">ITEM 4</div>
+        </section>
+
+        <h2>diferentes</h2>
+        <section class="container">
+            <div class="items center">AAA</div>
+            <div class="items start">123</div>
+            <div class="items stretch">LOREM IPSUM GENERATED TEXT</div>
+            <div class="items end">ITEM 4</div>
+        </section>
+
+        <h2>auto</h2>
+        <section class="container">
+            <div class="items center">AAA</div>
+            <div class="items start">123</div>
+            <div class="items stretch">LOREM IPSUM GENERATED TEXT LOREM IPSUM GENERATED TEXT LOREM IPSUM GENERATED TEXT</div>
+            <div class="items end">ITEM 4</div>
+        </section>
+
+                <h2>auto</h2>
+        <section class="container align-container">
+            <div class="items">AAA</div>
+            <div class="items">123</div>
+            <div class="items">LOREM IPSUM GENERATED TEXT</div>
+            <div class="items">ITEM 4</div>
+        </section>
+
+        <h2>diferentes</h2>
+        <section class="container">
+            <div class="items center">AAA</div>
+            <div class="items start">123</div>
+            <div class="items stretch">LOREM IPSUM GENERATED TEXT</div>
+            <div class="items end">ITEM 4</div>
+        </section>
+
+        <h2>conteudo maior</h2>
+        <section class="container">
+            <div class="items center">AAA</div>
+            <div class="items start">123</div>
+            <div class="items stretch">LOREM IPSUM GENERATED TEXT LOREM IPSUM GENERATED TEXT LOREM IPSUM GENERATED TEXT</div>
+            <div class="items end">ITEM 4</div>
+        </section>
+
+        <h2>column</h2>
+        <h2>auto</h2>
+        <section class="container align-container column">
+            <div class="items">AAA</div>
+            <div class="items">123</div>
+            <div class="items">LOREM IPSUM GENERATED TEXT</div>
+            <div class="items">ITEM 4</div>
+        </section>
+
+        <h2>diferentes</h2>
+        <section class="container align-container column">
+            <div class="items center">AAA</div>
+            <div class="items start">123</div>
+            <div class="items stretch">LOREM IPSUM GENERATED TEXT</div>
+            <div class="items end">ITEM 4</div>
+        </section>
+
+        <h2>conteudo maior</h2>
+        <section class="container align-container column">
+            <div class="items center">AAA</div>
+            <div class="items start">123</div>
+            <div class="items stretch">LOREM IPSUM GENERATED TEXT LOREM IPSUM GENERATED TEXT LOREM IPSUM GENERATED TEXT</div>
+            <div class="items end">ITEM 4</div>
+        </section>
+    </body>
+</html>

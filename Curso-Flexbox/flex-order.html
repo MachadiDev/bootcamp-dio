@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Fundamentos Flex Order</title>
+        <style>
+            .container{
+                display: flex;
+                border: 1px solid #000000;
+                max-width: 350px;
+                margin-bottom: 10px;
+            }
+            .items{
+                flex: 1;
+                background-color: aqua;
+                color: red;
+                text-align: center;
+                font-size: 24px;
+                margin: 5px;
+            }
+            .o1{
+                order: 1;
+            }
+            .o2{
+                order: 2;
+            }
+            .o3{
+                order: 3;
+            }
+            .o4{
+                order: 4;
+            }
+            .column{
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h2>order: 0</h2>
+        <div class="container">
+            <div class="items">1</div>
+            <div class="items">2</div>
+            <div class="items">3</div>
+            <div class="items">4</div>
+            <div class="items">4n</div>
+            <div class="items">4m</div>
+        </div>
+
+        <h2>order: diferente</h2>
+        <div class="container">
+            <div class="items o4">3</div>
+            <div class="items o2">4</div>
+            <div class="items o3">4n</div>
+            <div class="items o1">4m</div>
+        </div>
+
+        <h2>order: column</h2>
+        <div class="container column">
+            <div class="items o4">3</div>
+            <div class="items o2">4</div>
+            <div class="items o3">4n</div>
+            <div class="items o1">4m</div>
+        </div>
+    </body>
+</html>

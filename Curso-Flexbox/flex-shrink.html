@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fundamentos Flex Shrink</title>
+    <style>
+        .container{
+            display: flex;
+            border: 1px solid black;
+            max-width: 350px;
+        }
+
+        .items{
+            margin: 5px;
+            background-color: orangered;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .s-1{
+            flex-shrink: 1;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+        .s-0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+        .s-2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+        .s-3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h2>flex shrink 1</h2>
+    <div class="container">
+        <div class="items s-1 fg-1">A</div>
+        <div class="items s-1 fg-1">B</div>
+        <div class="items s-1 fg-1">C</div>
+        <div class="items s-1 fg-1">D</div>
+        <div class="items s-1 fg-1">E</div>
+    </div>
+
+    <h2>flex shrink 1</h2>
+    <div class="container">
+        <div class="items s-1 fg-1">A</div>
+        <div class="items s-1 fg-1">B</div>
+        <div class="items s-1 fg-1">Ccccccccccccccccccccc</div>
+        <div class="items s-1 fg-1">D</div>
+        <div class="items s-1 fg-1">E</div>
+    </div>
+
+    <h2>flex shrink 0</h2>
+    <div class="container">
+        <div class="items s-0 fg-1">A</div>
+        <div class="items s-0 fg-1">B</div>
+        <div class="items s-0 fg-1">C generated</div>
+        <div class="items s-0 fg-1">D generated</div>
+        <div class="items s-0 fg-1">E</div>
+    </div>
+
+    <h2>flex shrink 0</h2>
+    <div class="container">
+        <div class="items s-2 fg-1">A</div>
+        <div class="items s-2 fg-1">B</div>
+        <div class="items s-0 fg-1">C generated</div>
+        <div class="items s-3 fg-1">D generated</div>
+    </div>
+
+</body>
+</html>
