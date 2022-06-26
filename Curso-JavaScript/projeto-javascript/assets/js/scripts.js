@@ -13,3 +13,4 @@ function decrement(){
     currentNumberWrapper.innerHTML = currentNumber;
 
 }
+
