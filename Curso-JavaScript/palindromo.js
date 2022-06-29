@@ -1,7 +1,7 @@
 function verificaPalindromo(string) {
     if (!string) return 'Escolha uma palavra';
 
-    return string.split("").reverse().join("") === string;
+    return string.split(" ").reverse().join(" ") === string;
 
 }
 
@@ -21,4 +21,4 @@ function verificaPalindromo2(string){
     return true;
 }
 
-console.log(verificaPalindromo2("ovo"));
+console.log(verificaPalindromo2("socorram me subino onibus em marrocos"));
