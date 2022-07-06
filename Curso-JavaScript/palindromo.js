@@ -1,7 +1,13 @@
 function verificaPalindromo(string) {
     if (!string) return 'Escolha uma palavra';
 
-    return string.split(" ").reverse().join(" ") === string;
+    if (string.split(" ").reverse().join(" ") === string) {
+        return `${string} É um palindromo`;
+    } else{
+        return "Não é um palindromo";
+    }
+
+    
 
 }
 
