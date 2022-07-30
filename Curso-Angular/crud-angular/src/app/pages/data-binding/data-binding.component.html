@@ -1,0 +1,18 @@
+<h1 [class]="textRed" [style.font-size]="ftSize">O nome é {{text}}</h1>
+
+<img [src]="imageUrl" alt="Foto de uma API" [style.width.px]="width"><br>
+
+<button [style.backgroundColor]="bgColor" id="botao" [attr.aria-label]="buttonText" (click)="clicou()">{{buttonText}}</button>
+
+<input #input (keyup) = "clicou()">
+
+{{input.value}}
+
+<input type="text" class="form-control" [(ngModel)]="textInput">
+<p class="text-default">{{textInput}}</p><br>
+
+<app-button [btntext]="'Enviar'" [btnType]="'btn-dark'"></app-button>
+<app-button [btntext]="'Salvar'" [btnType]="'btn-danger'"></app-button>
+<app-button [btntext]="'Excluir'" [btnType]="'btn-info'"></app-button>
+<app-button [btntext]="'Cancelar'" [btnType]="'btn-primary'" (clickChildren)="clicouNoFilho($event)"></app-button>
+

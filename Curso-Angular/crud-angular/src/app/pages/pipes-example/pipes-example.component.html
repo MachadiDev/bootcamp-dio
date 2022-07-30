@@ -1,0 +1,41 @@
+<div class="form-group">
+    <label for="number">Number: </label>
+    <input type="text" [(ngModel)]="number" class="form-control" id="number">
+</div>
+
+<div class="">
+    <p>Formatação</p>
+    <p>{{number | number:'2.0-1'}}</p>
+
+    <p>Sem Formatação</p>
+    <p>{{number}}</p>
+
+    <p>Resultado em Moeda:</p>
+    <p>{{number | currency:'BRL'}}</p>
+
+    <p>Data Atual:</p>
+    <p>{{date | date: 'shortDate'}}</p>
+    <p>{{date | date: 'shortTime'}}</p>
+    <p>{{date | date: 'dd/MMM/yyyy'}}</p>
+    <p>{{text | uppercase}}</p>
+
+    <p>{{ pessoa | json }}</p>
+    <p>SLICE {{text | slice:1:4}}</p>
+</div>
+
+<div class="container">
+    <div class="col">
+        <div class="row-6">
+            <div class="form-group">
+                <label for="">Print Pipe Test</label><br>
+                <input type="text" name="text" id="text" #texto>
+                <button class="btn btn-primary" (click)="add(texto.value)">ADD</button>
+            </div>
+        </div>
+        <div class="row-6">
+            <h3>Lista Formatada</h3>
+            <p>Tamanho da Lista: {{nomes.length}}</p>
+            <p>{{nomes | printList}}</p>
+        </div>
+    </div>
+</div>
