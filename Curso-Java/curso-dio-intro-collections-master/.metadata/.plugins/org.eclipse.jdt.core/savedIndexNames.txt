@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+C:\Users\Samsung\Desktop\workspace\dio\bootcamp-dio\Curso-Java\curso-dio-intro-collections-master\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
