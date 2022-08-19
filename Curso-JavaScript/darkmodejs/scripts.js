@@ -28,6 +28,7 @@ function changeText() {
     }
     button.innerHTML = darkMode;
     titulo.innerHTML = lightMode + " ON";
+
 }
 
 button.addEventListener('click', changeMode);
